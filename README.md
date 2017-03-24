@@ -9,9 +9,12 @@ networking代理封装
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [self accessToServerForGetGetLogin];
+    
 }
 
+
 #pragma mark -- 网络请求
+
 -(void)accessToServerForGetGetLogin
 {
 
@@ -31,6 +34,7 @@ networking代理封装
 
 -(void)netWorkRequestSuccess:(id)data userInfo:(NSDictionary *)userInfo parameters:(NSDictionary *)getparameters
 {
+
     //服务器连接成功
     NSString *requestUsername = [userInfo objectForKey:@"username"];
     
@@ -42,8 +46,12 @@ networking代理封装
     }
     
 }
+
+
 -(void)netWorkRequestFailed:(NSError*)error userInfo:(NSDictionary *)userInfo parameters:(NSDictionary *)getparameters
 {
+
     //服务器连接失败请重试
     NSLog(@"%@",error);
+    
 }

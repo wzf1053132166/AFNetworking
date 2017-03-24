@@ -14,7 +14,6 @@ networking代理封装
 
 
 #pragma mark -- 网络请求
-
 -(void)accessToServerForGetGetLogin
 {
 

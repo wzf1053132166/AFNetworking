@@ -40,6 +40,7 @@
     
 //  如果特殊需求，只使用patch上传图片文件，需要进入AFN源文件将post多点上传那份代码复制一份才可以使用，AFN默认只有post上传
 //    [NetWorkRequest uploadPhoto:post url:@"" image:nil name:@"服务器字段" imageName:@"图片名字" requestName:@"自己写的返回代理时的名字" delegate:self];
+    
 }
 
 
